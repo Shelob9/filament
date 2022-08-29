@@ -57,7 +57,7 @@
                 class="flex items-center gap-2 shrink-0 p-3 text-sm font-medium"
                 x-bind:class="{
                     'text-gray-500 @if (config('forms.dark_mode')) dark:text-gray-400 @endif': tab !== '{{ $tab->getId() }}',
-                    'bg-white text-primary-600 @if (config('forms.dark_mode')) dark:bg-gray-800 @endif': tab === '{{ $tab->getId() }}',
+                    'bg-white text-primary-500 @if (config('forms.dark_mode')) dark:bg-gray-800 @endif': tab === '{{ $tab->getId() }}',
                 }"
             >
                 @if ($icon = $tab->getIcon())

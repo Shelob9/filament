@@ -24,7 +24,7 @@
                         'secondary' => 'bg-gray-500',
                         'success' => 'bg-success-500',
                         'warning' => 'bg-warning-500',
-                        default => 'bg-primary-600',
+                        default => 'bg-primary-500',
                     } }}': state,
                     '{{ match ($getOffColor()) {
                         'danger' => 'bg-danger-500',
@@ -75,7 +75,7 @@
                         }"
                     >
                         @if ($hasOnIcon())
-                            <x-dynamic-component :component="$getOnIcon()" x-cloak class="h-3 w-3 text-primary-600" />
+                            <x-dynamic-component :component="$getOnIcon()" x-cloak class="h-3 w-3 text-primary-500" />
                         @endif
                     </span>
                 </span>

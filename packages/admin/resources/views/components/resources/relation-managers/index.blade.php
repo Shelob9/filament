@@ -21,11 +21,11 @@
                         role="tab"
                         type="button"
                         @class([
-                            'flex whitespace-nowrap items-center h-8 px-5 font-medium rounded-lg whitespace-nowrap focus:outline-none focus:ring-2 focus:ring-primary-600 focus:ring-inset',
-                            'hover:text-gray-800 focus:text-primary-600' => $activeManager != $managerKey,
+                            'flex whitespace-nowrap items-center h-8 px-5 font-medium rounded-lg whitespace-nowrap focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-inset',
+                            'hover:text-gray-800 focus:text-primary-500' => $activeManager != $managerKey,
                             'dark:text-gray-400 dark:hover:text-gray-300 dark:focus:text-gray-400' => ($activeManager != $managerKey) && config('filament.dark_mode'),
-                            'text-primary-600 shadow bg-white' => $activeManager == $managerKey,
-                            'dark:text-white dark:bg-primary-600' => ($activeManager == $managerKey) && config('filament.dark_mode'),
+                            'text-primary-500 shadow bg-white' => $activeManager == $managerKey,
+                            'dark:text-white dark:bg-primary-500' => ($activeManager == $managerKey) && config('filament.dark_mode'),
                         ])
                     >
                         {{ $manager instanceof \Filament\Resources\RelationManagers\RelationGroup ? $manager->getLabel() : $manager::getTitleForRecord($ownerRecord) }}

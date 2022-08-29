@@ -60,7 +60,7 @@
 
 .is-focused .choices__inner,
 .is-open .choices__inner {
-    @apply border-primary-600 ring-1 ring-inset ring-primary-600;
+    @apply border-primary-500 ring-1 ring-inset ring-primary-500;
 }
 
 .choices__list {
@@ -135,7 +135,7 @@
 
 .choices__list--dropdown .choices__item--selectable.is-highlighted,
 .choices__list[aria-expanded] .choices__item--selectable.is-highlighted {
-    @apply bg-primary-600 text-white;
+    @apply bg-primary-500 text-white;
 }
 
 .choices__list--dropdown .choices__item--selectable.is-highlighted::after,

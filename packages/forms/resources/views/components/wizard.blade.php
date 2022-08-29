@@ -98,7 +98,7 @@
                 >
                     <div
                         x-bind:class="{
-                            'bg-primary-600': getStepIndex(step) === {{ $loop->index }},
+                            'bg-primary-500': getStepIndex(step) === {{ $loop->index }},
                             'bg-transparent group-hover:bg-gray-200 @if (config('forms.dark_mode')) dark:group-hover:bg-gray-600 @endif': getStepIndex(step) > {{ $loop->index }},
                         }"
                         class="absolute top-0 left-0 w-1 h-full md:w-full md:h-1 md:bottom-0 md:top-auto"
@@ -109,9 +109,9 @@
                         <div class="flex-shrink-0">
                             <div
                                 x-bind:class="{
-                                    'bg-primary-600': getStepIndex(step) > {{ $loop->index }},
+                                    'bg-primary-500': getStepIndex(step) > {{ $loop->index }},
                                     'border-2': getStepIndex(step) <= {{ $loop->index }},
-                                    'border-primary-600': getStepIndex(step) === {{ $loop->index }},
+                                    'border-primary-500': getStepIndex(step) === {{ $loop->index }},
                                     'border-gray-300 @if (config('forms.dark_mode')) dark:border-gray-500 @endif': getStepIndex(step) < {{ $loop->index }},
                                 }"
                                 class="w-10 h-10 flex items-center justify-center rounded-full"
@@ -129,7 +129,7 @@
                                         x-cloak
                                         x-bind:class="{
                                             'text-gray-500 @if (config('forms.dark_mode')) dark:text-gray-400 @endif': getStepIndex(step) !== {{ $loop->index }},
-                                            'text-primary-600': getStepIndex(step) === {{ $loop->index }},
+                                            'text-primary-500': getStepIndex(step) === {{ $loop->index }},
                                         }"
                                         class="w-5 h-5"
                                     />
@@ -138,7 +138,7 @@
                                         x-show="getStepIndex(step) <= {{ $loop->index }}"
                                         x-bind:class="{
                                             'text-gray-500 @if (config('forms.dark_mode')) dark:text-gray-400 @endif': getStepIndex(step) !== {{ $loop->index }},
-                                            'text-primary-600': getStepIndex(step) === {{ $loop->index }},
+                                            'text-primary-500': getStepIndex(step) === {{ $loop->index }},
                                         }"
                                     >
                                         {{ str_pad($loop->index + 1, 2, '0', STR_PAD_LEFT) }}

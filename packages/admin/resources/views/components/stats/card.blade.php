@@ -42,7 +42,7 @@
                 'flex items-center space-x-1 rtl:space-x-reverse text-sm font-medium',
                 match ($descriptionColor) {
                     'danger' => 'text-danger-600',
-                    'primary' => 'text-primary-600',
+                    'primary' => 'text-primary-500',
                     'success' => 'text-success-600',
                     'warning' => 'text-warning-600',
                     default => 'text-gray-600',
